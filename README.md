@@ -13,6 +13,19 @@ An unofficial LaTeX thesis template for doctoral students at the University of M
 - Clean, minimal structure to help you focus on writing
 - Designed for use with [Overleaf](https://www.overleaf.com), but also works with local LaTeX distributions (e.g., TeX Live, MiKTeX)
 
+## Structure
+
+umass_phd_thesis/
+├── thesis.tex              # Main document to compile
+├── references.bib          # BibTeX file for references
+├── chapters/               # Individual chapter files
+│   ├── chapter1.tex
+│   └── ...
+├── figs/                   # Figure files (e.g., PNG, PDF)
+│   └── chapter1/
+├── appendix/               # Optional appendix content
+└── umthesis.cls            # Customized LaTeX class file
+
 ## Recommended Workflow
 
 1. **Use Overleaf**:  
@@ -30,3 +43,15 @@ An unofficial LaTeX thesis template for doctoral students at the University of M
    Use the `cleveref` package for referencing figures, tables, and sections:
    ```latex
    \cref{fig:example}  % Outputs: "Figure 1"
+
+## Notes
+
+- The template uses double-spacing and 12pt font by default.
+
+- Page margins are set to meet UMass requirements (1.5" left, 1" others).
+
+- Make sure to review the final compiled PDF for formatting issues before submission.
+
+## License
+
+This project is released under the MIT License. You are free to modify and use it for your dissertation.
